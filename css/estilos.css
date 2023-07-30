@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background: #141414;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+  
+  h2 {
+    font-size: 43px;
+  }
+  
+  h3 {
+    font-size: 32px;
+  }
+  
+  h4 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    font-size: 20px;
+  }
+  
+ .header-index{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/Fotos-inicio/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
+ nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+.logo-header{
+  width: 70px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.barras{
+  font-size: 35px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+ 
+.nav-menu{
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  background: rgba(0, 0, 0, .95);
+  text-align: center;
+  transition: all .5s;
+}
+ 
+.nav-menu li{
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.nav-menu li a{
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+  color: rgb(250, 41, 41);
+  transition: 2s;
+}
+
+#check{
+  display: none;
+}
+#check:checked ~ .nav-menu{
+  height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+  display: block;
+}
+
+.banner-text{
+  padding: 0 30px;
+  margin-top: -1%;
+  text-align: center;
+  margin-left: 35%;
+  color: #fff;
+}
+.banner-text h1{
+  font-size: 40px;
+}
+.banner-text span{
+  color: rgb(248, 8, 8);
+}
+.banner-text h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px){
+  .logo-header{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 100px;
+  }
+  nav{
+    height: 100px;
+  }
+  .barras{
+    display: none;
+  }
+  .nav-menu{
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .nav-menu li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  .nav-menu li a{
+    font-size: 20px;
+  }
+  .banner-text{
+    margin-top: 10% ;
+    text-align: center;
+    margin-left: -54%;
+  }
+  .banner-text h1{
+    font-size: 50px;
+  }
+  .banner-text h2{
+    font-size: 25px;
+  }
+}
+
+
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-contenido {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-izquierda, .footer-derecha, .footer-centro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  align-items: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .sponsors-arriba, .sponsors-abajo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sponsors-arriba img,
+  .sponsors-abajo img {
+    max-width: 130px;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 1400px) {
+  
+    .footer-izquierda, .footer-derecha, .footer-centro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    align-items: center;
+    }
+
+    .logo {
+      max-width: 75px;
+    }
+  
+    .sponsors-arriba img,
+  .sponsors-abajo img {
+    max-width: 75px;  
+    margin: 5px;
+    }
+    
+    .footer-derecha img{
+      max-width: 50px;  
+      }
+  }
+  @media (max-width: 950px) {
+    .footer-izquierda, .footer-derecha, .footer-centro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    align-items: center;
+    }
+  
+    .logo {
+      max-width: 70px;
+    }
+
+    .sponsors-arriba img,
+  .sponsors-abajo img {
+    max-width: 50px;  
+    margin: 2px;
+    }
+    
+    .footer-derecha img{
+      max-width: 35px;  
+      }
+  }
+
+  .wsp{
+    position: fixed;
+    right: 30px;
+    bottom: 35px;
+     }
+  
+   .fa-whatsapp{
+  color: rgb(43, 220, 43);
+  font-size: 4rem;
+   }
+
+
+  button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(1, 140, 165);
+}
+button button:hover {
+  background-color: rgb(255, 17, 17);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .color-acento {
+    color: blueviolet;
+  }
+  
+  
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Fotos-inicio/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #hero h1 {
+    color: white;
+  }
+  
+  .trayectoria{
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid gray;
+    }
+
+  .titulo-trayectoria{
+    display: block;
+    font-size: 2.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    padding: 25px;
+  }
+
+.trayectoria img{
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+  }
+
+  .trayectoria img:hover{
+    width: 20%;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+  @media screen and (max-width: 768px){
+    .trayectoria{
+      flex-wrap: wrap;
+    }
+    .trayectoria img{
+      height: 80%;
+    }
+    .trayectoria img:hover{
+      width: 70%;
+    }
+  }
+
+  #copas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+  }
+  #copas .container {
+    padding: 150px 12px;
+  }
+  #copas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+  }
+  #copas p {
+    display: none;
+  }
+  #copas .carta {
+display: inline;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+  }
+  #copas .carta .carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGENES/Beatles.jpg);
+  }
+  #copas .carta .carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGENES/Beatles.jpg);
+  }
+  #copas .carta .carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGENES/Beatles.jpg);
+  }
+  
+  #tienda {
+    margin: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  #tienda .container {
+    height: 25em;
+    border-radius: 12px;
+    border: #343434 solid;
+    background-image: linear-gradient(0deg, rgb(7, 0, 75), rgb(212, 210, 210));
+  }
+  #tienda h3 {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-block: 14px;
+  }
+  #tienda img {
+    align-items: center;
+    width: 20vh;
+    height: 20vh;
+    margin: 1%;
+    margin-top: 35px;
+    margin-inline: 2.5em;
+    border-radius: 25px;
+  }
+
+
+  /* Pagina Galeria */
+  /* Pagina Galeria */
+  .titulo-galeria{
+    text-align: center;
+    justify-content: center;
+    margin: 30px 46%;
+  }
+
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+align-items: center;
+margin-left: 20vh;
+}
+
+.galeria h2{
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+  
+.foto-video1 a{
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  margin-bottom: 60px;
+}
+
+.foto-video1 img{
+  border-radius: 5px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.foto-video2 a{
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 200px;
+  margin-bottom: 60px;
+}
+
+.foto-video2 img{
+  border-radius: 5px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+ /* SubPagina Fotos */
+ /* SubPagina Fotos */
+ /* SubPagina Fotos */
+ .titulo-fotos{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 5rem;
+}
+
+.galeria3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+align-items: center;
+}
+
+.foto{
+background-color: white;
+width: 400px;
+height: 500px;
+border: 1px solid rgb(20, 20, 20);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.foto img{
+border-radius: 5px;
+width: 90%;
+height: 90%;
+object-fit: cover;
+}
+
+
+ /* SubPagina Videos */
+ /* SubPagina Videos */
+ /* SubPagina Videos */
+.titulo-videos{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 5rem;
+}
+
+.galeria2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+align-items: center;
+margin-top: 20px;
+}
+
+.videos{
+background-color: rgba(0, 0, 0, 0.788);
+width: 550px;
+height: 325px;
+border: 1px solid rgb(20, 20, 20);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.videos iframe{
+border-radius: 5px;
+width: 90%;
+height: 90%;
+object-fit: cover;
+}
+
+  /* Pagina Clubes */
+  /* Pagina Clubes */
+ .clubes h1{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .argentina img{
+    width: 7%;
+ }
+ .newells img{
+    width: 4%;
+ }
+ .barcelona img{
+    width: 8%;
+ }
+ .psg img{
+    width: 8%;
+ }
+ .inter-miami img{
+    width: 5%;
+ }
+.argentina{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.newells{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+}
+.barcelona{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+}
+.psg{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.inter-miami{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+}
+
+/* Pagina Trofeos */
+.copa-del-mundo{
+  display: flex;
+  align-items: center;
+}
+.champions{
+  display: flex;
+  align-items: center;
+}
+.liga-española{
+  display: flex;
+  align-items: center;
+}
+.balon-de-oro{
+  display: flex;
+  align-items: center;
+}
+.trofeos h1{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .copa-del-mundo img{
+width: 7%;
+ }
+ .champions img{
+  width: 8%;
+ }
+ .liga-española img{
+  width: 7%;
+  
+ }
+ .balon-de-oro img{
+  width: 9%;
+ }
+
+ 
+
+
+  
